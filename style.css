@@ -1,0 +1,234 @@
+/* reset */
+* {
+  margin:0;
+  padding:0;
+  font-size: 100%;
+  line-height: 1.4;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  font-family: inherit;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+table {
+ border-collapse: collapse;
+}
+
+/* System Fonts as used by GitHub */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background: #e5ece8;
+  font-size: 14px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.dashboard {
+  background: #5588bb;
+  font-family: Consolas, monospace;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.dashboard a {
+  color: white;
+  padding: 2mm;
+  line-height: 2.8;
+}
+
+.page {
+  width: 210mm;
+  height: 297mm;
+  background: white;
+  padding: 10mm;
+  margin: 20px auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header, main, footer {
+  flex: 0 0 auto;
+  margin-bottom: 5mm;
+}
+
+section, main {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 2mm;
+}
+
+/*
+ * header 
+ */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+hgroup {
+  flex: 0 0 100%;
+  display: flex;
+  align-content: flex-end;
+  align-items: center;
+}
+
+h1, h2 {
+  margin-bottom: 5mm;
+}
+
+h1 {
+  flex: 0 0 60%;
+  font-size: 2rem;
+}
+
+h2 {
+  flex: 0 0 40%;
+  font-size: 1.2rem;
+}
+
+.data {
+  flex: 0 0 auto;
+  flex-basis: calc(60% - 2mm);
+  max-width: calc(60% - 2mm);
+  margin-right: 2mm;
+}
+
+.data dl {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.data dl dt {
+  flex: 0 0 50%;
+  font-weight: bold;
+}
+.data dl dd {
+  flex: 0 0 50%;
+}
+
+.address {
+  flex: 0 0 40%;
+}
+
+.address h3 {
+  font-weight: bold;
+  margin: -2mm -2mm 2mm -2mm;
+  padding: 2mm;
+  background: #ccc;
+}
+
+/*
+ * main
+ */
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.page-split {
+  flex: 1 0 auto;
+}
+
+.page-split-inner {
+  overflow: hidden;
+}
+
+.sums {
+  padding: 2mm;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  flex: 0 0 auto;
+}
+
+.sums hr {
+  width: 100%;
+  border: 0;
+  border-top: 2px dashed #ccc;
+  height: 0;
+  background:none;
+  display: block;
+  margin-bottom: 2mm;
+}
+
+.sums dl {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.sums dt {
+  flex: 0 0 50%;
+  font-weight: bold;
+}
+.sums dd {
+  flex: 0 0 50%;
+  text-align: right;
+}
+
+main table {
+  width: 100%;
+}
+
+main table th {
+  background: #ccc;
+  font-weight: bold;
+  padding: 2mm;
+}
+
+main table th:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+main table th:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+main table td {
+  padding: 2mm 2mm 0 2mm;
+}
+
+main table tr:first-child td {
+  padding-top: 3mm;
+}
+
+/*
+ * footer
+ */
+
+footer {
+  margin-bottom: 0;
+}
+
+footer section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:0;
+}
+
+aside {
+  padding: 2mm;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+aside.full-width {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
